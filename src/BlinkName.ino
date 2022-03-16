@@ -19,42 +19,45 @@ void setup()
   pinMode(MY_LED, OUTPUT);
 }
 
+// Dot in morse code
 void dot()
 {
   // Turn on the LED
   digitalWrite(MY_LED, HIGH);
 
-  // Leave it on for one second
+  // Leave it on for 100 milliseconds
   delay(100ms);
 
   // Turn it off
   digitalWrite(MY_LED, LOW);
 
-  // Wait one more second
+  // Wait 500 milliseconds
   delay(500ms);
 }
 
+// Dash in morse code
 void dash()
 {
   // Turn on the LED
   digitalWrite(MY_LED, HIGH);
 
-  // Leave it on for one second
+  // Leave it on for 300 milliseconds
   delay(300ms);
 
   // Turn it off
   digitalWrite(MY_LED, LOW);
 
-  // Wait one more second
+  // Wait 500 milliseconds
   delay(500ms);
 }
 
+// Space for letters
 void space()
 {
+  // Wait 750 milliseconds
   delay(750ms);
 }
 
-// The loop() method is called frequently.
 void loop()
 {
 

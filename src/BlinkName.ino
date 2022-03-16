@@ -22,17 +22,52 @@ void setup()
 // The loop() method is called frequently.
 void loop()
 {
+
+  // J
+
   // Turn on the LED
   digitalWrite(MY_LED, HIGH);
 
   // Leave it on for one second
-  delay(1s);
+  delay(100ms);
 
   // Turn it off
   digitalWrite(MY_LED, LOW);
 
   // Wait one more second
-  delay(1s);
+  delay(500ms);
+
+  digitalWrite(MY_LED, HIGH);
+
+  delay(300ms);
+
+  digitalWrite(MY_LED, LOW);
+
+  delay(500ms);
+
+  digitalWrite(MY_LED, HIGH);
+
+  delay(300ms);
+
+  digitalWrite(MY_LED, LOW);
+
+  delay(500ms);
+
+  digitalWrite(MY_LED, HIGH);
+
+  delay(300ms);
+
+  digitalWrite(MY_LED, LOW);
+
+  delay(500ms);
+
+  // A
+
+  // M
+
+  // E
+
+  // S
 
   // And repeat!
 }

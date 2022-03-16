@@ -19,135 +19,65 @@ void setup()
   pinMode(MY_LED, OUTPUT);
 }
 
+void dot()
+{
+  // Turn on the LED
+  digitalWrite(MY_LED, HIGH);
+
+  // Leave it on for one second
+  delay(100ms);
+
+  // Turn it off
+  digitalWrite(MY_LED, LOW);
+
+  // Wait one more second
+  delay(500ms);
+}
+
+void dash()
+{
+  // Turn on the LED
+  digitalWrite(MY_LED, HIGH);
+
+  // Leave it on for one second
+  delay(300ms);
+
+  // Turn it off
+  digitalWrite(MY_LED, LOW);
+
+  // Wait one more second
+  delay(500ms);
+}
+
+void space()
+{
+  delay(750ms);
+}
+
 // The loop() method is called frequently.
 void loop()
 {
 
   // J
-
-  // Turn on the LED
-  digitalWrite(MY_LED, HIGH);
-
-  // Leave it on for one second
-  delay(100ms);
-
-  // Turn it off
-  digitalWrite(MY_LED, LOW);
-
-  // Wait one more second
-  delay(500ms);
-
-  digitalWrite(MY_LED, HIGH);
-
-  delay(300ms);
-
-  digitalWrite(MY_LED, LOW);
-
-  delay(500ms);
-
-  digitalWrite(MY_LED, HIGH);
-
-  delay(300ms);
-
-  digitalWrite(MY_LED, LOW);
-
-  delay(500ms);
-
-  digitalWrite(MY_LED, HIGH);
-
-  delay(300ms);
-
-  digitalWrite(MY_LED, LOW);
-
-  delay(1s);
-
+  dot();
+  dash();
+  dash();
+  dash();
+  space();
   // A
-
-  // Turn on the LED
-  digitalWrite(MY_LED, HIGH);
-
-  // Leave it on for one second
-  delay(100ms);
-
-  // Turn it off
-  digitalWrite(MY_LED, LOW);
-
-  // Wait one more second
-  delay(500ms);
-
-  digitalWrite(MY_LED, HIGH);
-
-  delay(300ms);
-
-  digitalWrite(MY_LED, LOW);
-
-  delay(1s);
-
+  dot();
+  dash();
+  space();
   // M
-
-  // Turn on the LED
-  digitalWrite(MY_LED, HIGH);
-
-  // Leave it on for one second
-  delay(300ms);
-
-  // Turn it off
-  digitalWrite(MY_LED, LOW);
-
-  // Wait one more second
-  delay(500ms);
-
-  digitalWrite(MY_LED, HIGH);
-
-  delay(300ms);
-
-  digitalWrite(MY_LED, LOW);
-
-  delay(1s);
-
-  // E
-
-  // Turn on the LED
-  digitalWrite(MY_LED, HIGH);
-
-  // Leave it on for one second
-  delay(100ms);
-
-  // Turn it off
-  digitalWrite(MY_LED, LOW);
-
-  // Wait one more second
-  delay(1s);
-
-  // S
-
-  // Turn on the LED
-  digitalWrite(MY_LED, HIGH);
-
-  // Leave it on for one second
-  delay(100ms);
-
-  // Turn it off
-  digitalWrite(MY_LED, LOW);
-
-  // Wait one more second
-  delay(500ms);
-
-  digitalWrite(MY_LED, HIGH);
-
-  delay(100ms);
-
-  digitalWrite(MY_LED, LOW);
-
-  delay(500ms);
-
-  digitalWrite(MY_LED, HIGH);
-
-  delay(100ms);
-
-  digitalWrite(MY_LED, LOW);
-
-  delay(1s);
-
-  // And repeat!
+  dash();
+  dash();
+  space();
+  //  E
+  dot();
+  space();
+  //  S
+  dot();
+  dot();
+  dot();
+  space();
 }

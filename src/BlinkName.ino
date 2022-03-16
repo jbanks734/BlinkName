@@ -54,8 +54,8 @@ void dash()
 // Space for letters
 void space()
 {
-  // Wait 750 milliseconds
-  delay(750ms);
+  // Wait 500 milliseconds
+  delay(250ms);
 }
 
 void loop()
@@ -82,5 +82,8 @@ void loop()
   dot();
   dot();
   dot();
+  space();
+  space();
+  space();
   space();
 }
